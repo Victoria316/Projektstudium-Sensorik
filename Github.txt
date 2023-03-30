@@ -1,10 +1,10 @@
-Erstellen Sie ein neues Repository auf Github, das als Master-Repository dienen wird.
+Erstellen Sie ein neues Repository auf Github, das als Master-Repository dienen wird. x
 
-Laden Sie Github Desktop herunter und installieren Sie es auf Ihrem Computer.
+Laden Sie Github Desktop herunter und installieren Sie es auf Ihrem Computer. x
+ 
+Klonen Sie das Master-Repository auf Ihren lokalen Computer, indem Sie die Schaltfläche "Clone Repository" in Github Desktop verwenden. x
 
-Klonen Sie das Master-Repository auf Ihren lokalen Computer, indem Sie die Schaltfläche "Clone Repository" in Github Desktop verwenden.
-
-Laden Sie Ihre Code-Dateien in den geklonten Ordner auf Ihrem lokalen Computer.
+Laden Sie Ihre Code-Dateien in den geklonten Ordner auf Ihrem lokalen Computer.x
 
 
 Fügen Sie Github Desktop hinzu, um Änderungen an den Dateien zu verfolgen und zu verwalten,
