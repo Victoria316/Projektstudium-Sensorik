@@ -1,0 +1,3 @@
+TODO:
+Wo läuft was: 
+- Server und ähnliches nennen: (Addresse Port Tabellennamen und ähnliches alles hier)

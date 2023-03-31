@@ -1,0 +1,14 @@
+1. Laden Sie Github Desktop herunter und installieren Sie es auf Ihrem Computer.
+
+2. Klonen Sie das Master-Repository auf Ihren lokalen Computer, indem Sie die Schaltfläche "Clone Repository" in Github Desktop verwenden.
+
+3. Laden Sie Ihre Code-Dateien in den geklonten Ordner auf Ihrem lokalen Computer.
+
+4. Fügen Sie Github Desktop hinzu, um Änderungen an den Dateien zu verfolgen und zu verwalten,
+    (Branch müsste sich automatisch erstellen.)  
+
+    1. indem Sie sie mit einem Commit versehen
+    2. sie dann auf den Master-Branch des Repositories pushen.  (CREATE PULL REQUEST, erst nach Commit sichtbar)
+
+5. Bitte schreibt mir Felix damit ich den Fortschritt mergen(Code zusammenführen) kann. 
+    
