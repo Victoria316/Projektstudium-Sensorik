@@ -1,0 +1,17 @@
+Virtuelle Arbeitsumgebung 
+    Vorteil
+    alle relevaten Pkg im Venv 
+    keine blöden Überscheidungen 
+    kein Zumüllen vom PC 
+
+
+1. im Terminal ins Project navigieren 
+cd /Documents/my_project
+2. Befehl zum erstellen einer Venv
+python -m venv venv
+3. Activieren der Venv
+venv\Scripts\activate
+4. so installiert man allgemein Pkges in Python
+pip install package_name
+5. wenn mans braucht deactivate
+deactivate

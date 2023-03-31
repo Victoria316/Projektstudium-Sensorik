@@ -1,0 +1,11 @@
+Script für die Erstellung von Aufgaben_Typen  
+TODO: 
+
+Script für die Auswertung
+TODO: 
+
+Script für Flask Session:
+TODO: 
+
+
+ 
