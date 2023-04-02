@@ -27,7 +27,7 @@ def login():
 
         if user and user.password == password:
             session['username'] = username
-            return redirect(url_for('dashboard'))
+            return redirect(url_for('choosemode'))
         else:
             return render_template('login.html', error='Invalid username or password')
 
