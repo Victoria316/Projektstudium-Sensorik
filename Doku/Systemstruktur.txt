@@ -1,3 +1,7 @@
 TODO:
 Wo läuft was: 
 - Server und ähnliches nennen: (Addresse Port Tabellennamen und ähnliches alles hier)
+
+- Database Connections 
+DB ULR 
+'postgresql://username:password@localhost/dbname' used DB is in app.py 'postgresql://postgres:EWa?ss66@localhost/testdb'
