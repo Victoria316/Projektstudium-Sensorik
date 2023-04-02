@@ -7,5 +7,5 @@ TODO:
 Script für Flask Session:
 TODO: 
 
-
- 
+Script DB Connections:
+TODO:

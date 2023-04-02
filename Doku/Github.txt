@@ -12,3 +12,18 @@
 
 5. Bitte schreibt mir Felix damit ich den Fortschritt mergen(Code zusammenführen) kann. 
     
+
+
+
+ !!!!   VOR ARBEITS  BEGINN !!!!!
+
+ in Git Desktop update from master /main branch 
+ -> weniger Merge probs. 
+
+ !!!!   NACH ARBEITS  ENDE !!!!!
+  1.  Testen ob die überarbeitete Version läuft , wenn nicht auskommentieren und mit einen TODO versehen.
+ 
+  2.  create Pull - Request damit ich mergen kann. -> jeder arbeitet an einer Aktuellen Version. 
+
+
+ 
