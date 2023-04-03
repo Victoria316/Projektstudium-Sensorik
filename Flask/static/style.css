@@ -1,0 +1,110 @@
+body {
+  background-color: #ffffff; /* white */
+  color: #000000; /* black */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #ffffff; /* white */
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 500px; /* added max-width */
+  margin: 0 auto; /* added margin to center the form horizontally */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #32cd32; /* green */
+  border: none;
+  color: #ffffff; /* white */
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #228b22; /* dark green */
+}
+
+
+.green-box {
+  background-color: #32cd32; /* green */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.green-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.green-box li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.green-box a {
+  color: #ffffff; /* white */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dashboard {
+  text-align: center;
+}
+
+.dashboard h1 {
+  margin-bottom: 20px;
+}
+
+.professor-link {
+  background-color: #32cd32;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 24px; /* increased font size */
+}
+
+.student-link {
+  background-color: #32cd32;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 24px; /* increased font size */
+}
+
+.student-link:hover, .professor-link:hover {
+  background-color: #228b22;
+}
