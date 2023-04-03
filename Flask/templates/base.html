@@ -6,15 +6,15 @@
   </head>
   <body>
     <header>
-      <nav>
+      {% block choices %}
+      <nav class="green-box">
         <ul>
-          
           <li><a href="{{ url_for('dashboard') }}">Home</a></li>
           <li><a href="{{ url_for('login') }}">Login</a></li>
           <li><a href="{{ url_for('register') }}">Register</a></li>
-
         </ul>
       </nav>
+      {% endblock %}
     </header>
     <main>
       {% block content %}{% endblock %}
@@ -24,3 +24,4 @@
     </footer>
   </body>
 </html>
+
