@@ -49,7 +49,14 @@ def register():
 
 @app.route('/student_waitingroom')
 def student_waitingroom():
-    return render_template('student_waitingroom.html')
+ 
+    if 'username' in session:
+        username = session['username']
+        user = Users.query.filter_by(username=username).first()
+        if user.user_type == False:
+            training = user.training
+            return render_template('student_waitingroom.html', training=training)
+    return redirect(url_for('login'))
 
 
 @app.route('/Error')
@@ -75,23 +82,26 @@ def select_training(training):
     for student in students:
         student.training = training
         db.session.commit()
-
     return redirect(url_for('training_page', training=training))
 
 
 @app.route('/training_page/<training>')
 def training_page(training):
-    if 'username' in session:
-        print(session)
-        username = session['username']
-        user = Users.query.filter_by(username=username).first()
-        if user.user_type == False and user.training == training:
+        if 'username' in session:
             return render_template('training_page.html', training=training)
         else:
-            return redirect(url_for('error'))
-    else:
-        return redirect(url_for('login'))
+            return redirect(url_for('login'))
 
+
+#not sure if working
+@app.route('/check_training_assignment')
+def check_training_assignment():
+    if 'username' in session:
+        username = session['username']
+        user = Users.query.filter_by(username=username).first()
+        if user.user_type == False:
+            return {'training': user.training}
+    return {}
     
 
 @app.route('/')
