@@ -97,6 +97,7 @@ def error():
     This function handles the error page.
     """
     return render_template('Error.html')
+
 @app.route('/professor_dashboard')
 def professor_dashboard():
     """
@@ -150,6 +151,23 @@ def check_training_assignment():
     if user.user_type == False:
         return {'training': user.training}
     return {}
+
+
+ #@app.route('/training/<training_id>/progress')
+#@login_required(role='professor')
+#def training_progress(training_id):
+    # Get the training object from the database
+    #training = Training.query.filter_by(id=training_id).first()
+    #if not training:
+    #    # If the training does not exist, return a 404 error
+    #    abort(404)
+    #
+    ## Get all the submissions for the training
+    #submissions = Submission.query.filter_by(training_id=training.id).all()
+
+    ## Render the progress template
+    #return render_template('training_progress.html', training=training, submissions=submissions)
+
 
 @app.route('/')
 def dashboard():

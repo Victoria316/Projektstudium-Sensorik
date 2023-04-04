@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Training Progress - {{ training.name }}</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Submission Time</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for submission in submissions %}
+        <tr>
+            <td>{{ submission.user.username }}</td>
+            <td>{{ submission.timestamp }}</td>
+            <td>{{ submission.score }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
