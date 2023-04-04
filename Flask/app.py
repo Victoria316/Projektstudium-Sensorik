@@ -95,6 +95,66 @@ def error():
     This function handles the error page.
     """
     return render_template('Error.html')
+@app.route('/professor_dashboard')
+def professor_dashboard():
+    """
+    This function handles the professor dashboard page.
+    If the user is logged in as a professor, they are shown the page with the available trainings.
+    If the user is logged in as a student, they are redirected to the student waiting room.
+    If the user is not logged in, they are redirected to the login page.
+    """
+    if 'username' in session:
+        username = session['username']
+        user = Users.query.filter_by(username=username).first()
+        if user.user_type == True:
+            trainings = ['Training 1', 'Training 2', 'Training 3'] # Example list of available trainings
+            return render_template('professor_dashboard.html', trainings=trainings)
+        elif user.user_type == False:
+            return redirect(url_for('student_waitingroom'))
+    return redirect(url_for('login'))
+
+@app.route('/select_training/<training>')
+def select_training(training):
+    """
+    This function handles the selection of a training by a professor.
+    It sets the 'training' attribute of all students to the selected training.
+    After updating the database, it redirects to the training page for the selected training.
+    """
+    students = Users.query.filter_by(user_type=False).all()
+    for student in students:
+        student.training = training
+        db.session.commit()
+    return redirect(url_for('training_page', training=training))
+
+@app.route('/training_page/<training>')
+def training_page(training):
+    """
+    This function handles the training page for a selected training.
+    If the user is not logged in, they are redirected to the login page.
+    """
+    if 'username' in session:
+        return render_template('training_page.html', training=training)
+    else:
+        return redirect(url_for('login'))
+#not working yet 
+@app.route('/check_training_assignment')
+def check_training_assignment():
+    """
+    This function returns the training assignment for a student if they are logged in.
+    """
+    if 'username' in session:
+        username = session['username']
+        user = Users.query.filter_by(username=username).first()
+    if user.user_type == False:
+        return {'training': user.training}
+    return {}
+
+@app.route('/')
+def dashboard():
+    """
+    This function handles the main dashboard page.
+    """
+    return render_template('dashboard.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
