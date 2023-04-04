@@ -108,3 +108,24 @@ button[type="submit"]:hover {
 .student-link:hover, .professor-link:hover {
   background-color: #228b22;
 }
+
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+
+
+.btn-primary:hover {
+  background-color: #32cd32;
+  border-color: #32cd32;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(10, 201, 42, 0.733);
+}
