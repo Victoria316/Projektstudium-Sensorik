@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
+import pdb
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:EWa?ss66@localhost/testdb'
 app.config['SECRET_KEY'] = 'secret_key'
@@ -155,6 +157,11 @@ def dashboard():
     This function handles the main dashboard page.
     """
     return render_template('dashboard.html')
+
+@app.route('/debug')
+def debug():
+    pdb.set_trace()
+    return 'Debugging'
 
 if __name__ == '__main__':
     app.run(debug=True)
