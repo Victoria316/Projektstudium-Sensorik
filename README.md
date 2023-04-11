@@ -21,7 +21,7 @@ wie werden die Daten aufgenommen und gespeichert?
 
 2. Bestimmen Sie die Methoden zur Analyse der Daten:
 Wie sollen die Daten verarbeitet und ausgewertet werden?
-    Vielleicht extra Script für Auswertung activierung bei  press Button der letzten Abgabe. 
+   Vielleicht extra Script für Auswertung activierung bei  press Button der letzten Abgabe. 
 -  File einlesen 
 -  Auswertung mit Matplotlib, Numpy , Pandas --> Möglichkeit Graphen und ähnliches zuerstellen  
 -
@@ -30,8 +30,7 @@ Wie sollen die Daten verarbeitet und ausgewertet werden?
 
 Wie soll die Benutzeroberfläche aussehen?
 - Webapplikation 
--> Welche Hierauchie wird durchlaufen 
-zb. Anmeldung (kein Login nur Name für die Auswertung zwecks Filename) 
+
     -> Zusammenstellung des Quizes (eventuell schon vorgegeben? oder Direkt Auswahl für jeden oder nur für User xxx )  
     -> Erste Aufgabe -> OnKlick Abgabe (Update) -> nächste Aufgabe -> ... Ende Screen evtl mit Auswertung? 
     
@@ -45,8 +44,9 @@ welche Funktionen sollen verfügbar sein?
 4. Implementieren Sie die Software
 Flask Session -> Html Page -> Database(As needed) -> Script zur Erstellung von Aufgabentypen -> Script zur Auswertung 
 
-siehe Flask Ablauf Diagramm @All 
-siehe Html beispiele 
+siehe Flask Ablauf Diagramm 
+
+siehe Html Beispile 
 siehe Database Design 
 Scripts immer mit DOC STRING UND COMMENT (Chat Bot kann da gut helfen)
 

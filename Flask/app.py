@@ -137,6 +137,7 @@ def training_page(training):
         return render_template('training_page.html', training=training)
     else:
         return redirect(url_for('login'))
+
 #not working yet 
 @app.route('/check_training_assignment')
 def check_training_assignment():
@@ -149,23 +150,6 @@ def check_training_assignment():
     if user.user_type == False:
         return {'training': user.training}
     return {}
-
-
- #@app.route('/training/<training_id>/progress')
-#@login_required(role='professor')
-#def training_progress(training_id):
-    # Get the training object from the database
-    #training = Training.query.filter_by(id=training_id).first()
-    #if not training:
-    #    # If the training does not exist, return a 404 error
-    #    abort(404)
-    #
-    ## Get all the submissions for the training
-    #submissions = Submission.query.filter_by(training_id=training.id).all()
-
-    ## Render the progress template
-    #return render_template('training_progress.html', training=training, submissions=submissions)
-
 
 @app.route('/')
 def dashboard():
