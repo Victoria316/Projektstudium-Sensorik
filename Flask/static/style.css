@@ -1,3 +1,10 @@
+
+/* 
+Stildefinitionen für die Darstellung des Body-Element:
+ Schriftart: Arial, Text: schwarz, Schriftgröße: 16 Pixel
+ Hintergrund Body: weiß
+ Inhalt nicht von Leerzeichen umgeben
+*/
 body {
   background-color: #ffffff; /* white */
   color: #000000; /* black */
@@ -7,6 +14,10 @@ body {
   padding: 0;
 }
 
+/*
+alle Elemente werden innerhalb des Containers horizontal 
+und vertikal zentriert und der Container nimmt die gesamte Höhe des Viewports ein
+*/
 .container {
   display: flex;
   justify-content: center;
@@ -14,6 +25,11 @@ body {
   height: 100vh;
 }
 
+/*
+Für eine saubere und übersichtliche Darstellung
+Formular auf der Webseite zentriert und stilisiert 
+Abstand zwischen Inhalt und Rand: 20 Pixel (padding) 
+*/
 form {
   background-color: #ffffff; /* white */
   border-radius: 5px;
@@ -28,7 +44,11 @@ label {
   display: block;
   margin-bottom: 10px;
 }
-
+/*
+alle Input Elemente(text, password) und Button (submit) einheitlich
+ graue Umrandung mit abgerundeten Ecken, Schriftgröße: 16 Pixel, 
+  unteren Seitenabstand: 10 Pixel, Innenabstand: 10px, Breite: 100%.
+*/
 input[type="text"],
 input[type="password"],
 button[type="submit"] {
@@ -47,11 +67,20 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+/*
+visuelles Feedback wenn der Nutzer mit der Maustaste über den 
+Button sich bewegt, ändert sich die Hintergrundfarbe zu dunkelgrün
+*/
 button[type="submit"]:hover {
   background-color: #228b22; /* dark green */
 }
 
-
+/*
+ alle Elemente der Klasse "green-box"
+  flexibles Container-Element mit einem grünen Hintergrund, Höhe: 50 Pixeln,
+  Inhalt wird horizontal+am Anfang des Containers ausgerichtet und vertikal in der Mitte des Containers zentriert
+  Innenabstand:20 Pixeln 
+*/
 .green-box {
   background-color: #32cd32; /* green */
   display: flex;
@@ -61,17 +90,30 @@ button[type="submit"]:hover {
   padding: 0 20px;
 }
 
+/*
+innerhalb der green-Box werden alle Listenelemente einer ungeordneten Liste (ul)
+kein Aufzählungszeichen und Abstand zwischen dem Rahmen 
+*/
 .green-box ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+
+/*
+Die Listenelemente (li) einer Liste (z.B. ul)
+werden horizontal nebeneinander angeordnet und jeder hat 20 Pixel Abstand zum Nächsten.
+*/
 .green-box li {
   display: inline-block;
   margin-right: 20px;
 }
 
+/*
+alle Links (a) innerhalb Klasse "green-box" 
+Schriftfarbe: weiß, fett und ohne Unterstreichung, Schriftgröße: 16 Pixel
+*/
 .green-box a {
   color: #ffffff; /* white */
   text-decoration: none;
@@ -79,14 +121,25 @@ button[type="submit"]:hover {
   font-size: 16px;
 }
 
+/*
+alle Elemente innerhalb der Klasse "Dashboard" werden zentriert
+*/
 .dashboard {
   text-align: center;
 }
-
+/*
+alle h1-Überschriften in dashboard haben einen Abstand von 20 Pixel vom unteren Rand 
+*/
 .dashboard h1 {
   margin-bottom: 20px;
 }
 
+/*
+alle Links der Klasse professor-link besitzen folgende Eigenschaften:
+Schriftgröße: 24 Pixel, Schriftfarbe: weiß, nicht Unterstrichen
+Hintergrund: grün,
+Abstand zwischen Text und Rand des Links betragen oben/unten: 15 Pixel, rechts/links: 20 Pixel
+*/
 .professor-link {
   background-color: #32cd32;
   color: #ffffff;
@@ -95,7 +148,10 @@ button[type="submit"]:hover {
   text-decoration: none;
   font-size: 24px; /* increased font size */
 }
-
+/*
+alle Links der Klasse student-link haben folgende Merkmale (identisch mit Klasse professor-link)
+Hintergrundfarbe: grün, Schriftfarbe: weiß, nicht Unterstrichen und Schriftgröße: 24 Pixel
+*/
 .student-link {
   background-color: #32cd32;
   color: #ffffff;
@@ -105,25 +161,38 @@ button[type="submit"]:hover {
   font-size: 24px; /* increased font size */
 }
 
+/*
+wie bei button (typ submit) wird bei student-link und professor-link wird der Hintergrund dunkelgrün 
+wenn man mit der Maus darüber sich bewegt
+*/
 .student-link:hover, .professor-link:hover {
   background-color: #228b22;
 }
 
-
+/*
+Kopfteil der Karte (Card) bekommt einen blauen Hintergrund auf weißem Text
+*/
 .card-header {
   background-color: #007bff;
   color: #fff;
 }
-
+/*
+Körperbereich der Karte (Card)
+Abstand des Inhalts zum Header und Footer beträgt: 20 Pixel
+*/
 .card-body {
   padding: 20px;
 }
 
+/*
+primärer Button wird grün wenn der Benutzer mit der Maus drüber geht
+*/
 .btn-primary:hover {
   background-color: #32cd32;
   border-color: #32cd32;
 }
 
+/*Fokus Effekt auf primärer Button */
 .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(10, 201, 42, 0.733);
 }

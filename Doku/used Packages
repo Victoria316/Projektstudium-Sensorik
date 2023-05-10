@@ -4,7 +4,7 @@ Api um aus den Google Forms Daten auszulesen
 https://developers.google.com/forms/api/quickstart/python?hl=de
 
 Flask
-https://www.youtube.com/watch?v=U8E8D9OCEeI -> passendes Toturial 
+https://www.youtube.com/watch?v=U8E8D9OCEeI -> passendes Tutorial 
 
 Flask SQLAlchemy
 https://www.sqlalchemy.org/ -> Link zur Doku 

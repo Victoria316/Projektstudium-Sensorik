@@ -1,11 +1,14 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-
+# Import Python Bibliothek (interaktiver Debugger für Python-Programme)
 import pdb
-
+#Erstellung Flask App
 app = Flask(__name__)
+# Verbindung zu einer PostgreSQL-Datenbank testdb
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:EWa?ss66@localhost/testdb'
+# Setzung des geheimen Schlüssels um Daten zu speichern
 app.config['SECRET_KEY'] = 'secret_key'
+#Erzeugung SQLAlchemy-Datenbankinstanz und anhängen an App um auf Datenbank zuzugreifen
 db = SQLAlchemy(app)
 
 
