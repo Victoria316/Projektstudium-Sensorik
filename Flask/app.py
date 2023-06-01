@@ -672,7 +672,7 @@ def create_training():
                 form.konz_reihe_questions.append(item)
             for item in rang2:
                 form.konz_reihe_questions.append(item)
-        if action[1] == "paar_vergleich":
+        if action[1] == "paar_vergleich": 
             rang1 = form.paar_vergleich_questions[0:int(action[2])]
             rang2 = form.paar_vergleich_questions[int(action[2])+1:len(form.paar_vergelich_questions)]
             form.paar_vergleich_questions = []
